@@ -1,0 +1,10 @@
+-- Tabla Plantas
+CREATE TABLE plantas(
+    id_planta INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_planta VARCHAR(25) NOT NULL,
+    desc_planta VARCHAR(100) NOT NULL,
+    tipo_planta VARCHAR(50) NOT NULL,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME NOT NULL ON UPDATE CURRENT_TIMESTAMP,
+    activo TINYINT(4) NOT NULL DEFAULT 1
+);
