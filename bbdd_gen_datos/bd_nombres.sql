@@ -1,0 +1,11 @@
+--BASE DE DATOS HECHAS POR ADOO
+-- Tabla Nombres
+CREATE TABLE nombres (
+    id_nombre INT PRIMARY KEY AUTO_INCREMENT,
+    desc_nombre VARCHAR(100) NOT NULL,
+    fk_genero INT NOT NULL,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME NOT NULL ON UPDATE CURRENT_TIMESTAMP,
+    activo TINYINT(4) NOT NULL DEFAULT 1,
+);
+ALTER TABLE nombres ADD CONSTRAINT FK_nombre_genero FOREIGN KEY (fk_genero) REFERENCES generos(id_genero);

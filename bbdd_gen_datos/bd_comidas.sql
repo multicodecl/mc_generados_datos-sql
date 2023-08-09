@@ -1,0 +1,10 @@
+-- Tabla Comidas
+CREATE TABLE comidas(
+    id_comida INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_comida VARCHAR(25) NOT NULL,
+    desc_comida VARCHAR(255) NOT NULL,
+    pais_comida VARCHAR(25) NOT NULL,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME NOT NULL ON UPDATE CURRENT_TIMESTAMP,
+    activo TINYINT(4) NOT NULL DEFAULT 1
+);
