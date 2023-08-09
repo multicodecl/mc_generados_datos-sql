@@ -1,9 +1,0 @@
--- Tabla Animales
-CREATE TABLE animales(
-    id_animal INT AUTO_INCREMENT PRIMARY KEY,
-    desc_animal VARCHAR(25) NOT NULL,
-    genero_animal VARCHAR(25) NOT NULL,
-    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    updated_at DATETIME NOT NULL ON UPDATE CURRENT_TIMESTAMP,
-    activo TINYINT(4) NOT NULL DEFAULT 1
-);

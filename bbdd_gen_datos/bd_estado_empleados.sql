@@ -1,9 +1,0 @@
---BASE DE DATOS HECHAS POR ADOO
--- Tabla Estado Empleados
-CREATE TABLE estado_empleados (
-    id_empleado INT PRIMARY KEY AUTO_INCREMENT,
-    estado_empleado VARCHAR(100) NOT NULL,
-    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    updated_at DATETIME NOT NULL ON UPDATE CURRENT_TIMESTAMP,
-    activo TINYINT(4) NOT NULL DEFAULT 1
-);
