@@ -1,4 +1,4 @@
--- Tabla Animales
+-- Tabla Animalesaaaa
 CREATE TABLE animales(
     id_animal INT AUTO_INCREMENT PRIMARY KEY,
     desc_animal VARCHAR(25) NOT NULL,
