@@ -1,0 +1,10 @@
+-- Tabla Marcas
+CREATE TABLE marcas(
+    id_marca INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_marca VARCHAR(25) NOT NULL,
+    creacion_marca DATE() NOT NULL,
+    desc_marca VARCHAR(255) NOT NULL,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME NOT NULL ON UPDATE CURRENT_TIMESTAMP,
+    activo TINYINT(4) NOT NULL DEFAULT 1
+);
