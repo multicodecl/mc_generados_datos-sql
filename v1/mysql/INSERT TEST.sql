@@ -1,0 +1,13 @@
+--
+-- En este archivo se definirán los INSERT de prueba
+--
+-- Fecha del archivo: 16-08-2023
+-- Creado por: https://github.com/multicodecl
+--
+-- Actualizado por: 
+-- 16-08-2023 https://github.com/multicodecl
+--
+
+--
+-- Insert tabla NOMBRE_TABLA
+--
