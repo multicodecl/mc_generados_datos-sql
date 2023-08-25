@@ -37,3 +37,4 @@ CREATE TABLE `libros`
     
     `activo` TINYINT(4) NOT NULL DEFAULT 1
 );
+

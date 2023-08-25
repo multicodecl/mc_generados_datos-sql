@@ -25,6 +25,8 @@ CREATE TABLE `idiomas`
     `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `updated_at` DATETIME NOT NULL ON UPDATE CURRENT_TIMESTAMP,
 	
+    `nombre_idioma` VARCHAR(25) NOT NULL,
+
 	`descripcion` VARCHAR(255) NOT NULL,
 	
     `activo` TINYINT(4) NOT NULL DEFAULT 1
