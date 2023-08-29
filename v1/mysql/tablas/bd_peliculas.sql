@@ -33,7 +33,7 @@ CREATE TABLE `peliculas`
     `titulo` VARCHAR(255) NOT NULL,
     `productor` VARCHAR(255) NOT NULL,
     `actores` VARCHAR(255) NOT NULL,
-    `descripcion` VARCHAR(255) NOT NULL,
+    `descripcion` TEXT NOT NULL,
     `categoria` VARCHAR(255) NOT NULL,
     `fecha_publicacion` DATE,
     

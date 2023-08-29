@@ -14,6 +14,7 @@ _Sistema web php a desarrollar en su versión 1 y posteriores mejoras_
 * **Discord, Chat** : https://discord.gg/WSMbwStaDz
 
 ## Autores
+* **multicodecl** - *Trabajo Inicial, Desarrollador* - [multicodecl](https://github.com/multicodecl)
 * **Hur0nZ** - *Trabajo Inicial, Desarrollador* - [Hur0nZ](https://github.com/Hur0nZ)
 * **adoocs** - *Trabajo Inicial, Desarrollador* - [adoocs](https://github.com/adoocs)
 
