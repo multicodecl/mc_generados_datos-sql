@@ -6,7 +6,7 @@
 --
 -- Actualizado por: 
 -- 12-08-2023 https://github.com/Hur0nZ
--- 17-08-2023 https://github.com/multicodecl
+-- 01-09-2023 https://github.com/multicodecl
 --
 -- id_col, Guarda el id del color
 -- created_at, Guarda la fecha de creación del registro
@@ -23,7 +23,7 @@ CREATE TABLE `colores`
 (
     `id_col` BIGINT(20) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `updated_at` DATETIME NOT NULL ON UPDATE CURRENT_TIMESTAMP,
+    `updated_at` DATETIME NULL ON UPDATE CURRENT_TIMESTAMP,
 	
     `descripcion` VARCHAR(255) NOT NULL,
     

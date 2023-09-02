@@ -5,7 +5,8 @@
 -- Creado por: https://github.com/multicodecl
 --
 -- Actualizado por: 
--- 16-08-2023 https://github.com/multicodecl
+-- 01-09-2023 https://github.com/multicodecl
+-- 29-08-2023 https://github.com/Hur0nZ
 --
 
 --
@@ -148,17 +149,16 @@ INSERT INTO `comidas` (`nombre`, `descripcion`, `pais`) VALUES
 --
 -- Insert tablas cursos
 --
--- Nivel educativo: Basica
 INSERT INTO `cursos` (`descripcion`) VALUES
     ('1er grado'),
     ('2do grado'),
     ('3er grado'),
     ('4to grado'),
     ('5to grado'),
-    ('6to grado');
-    ('7to grado');
+    ('6to grado'),
+    ('7to grado'),
     ('8to grado');
-    
+
 --
 -- Nivel educativo: Media
 --
@@ -166,7 +166,7 @@ INSERT INTO `cursos` (`descripcion`) VALUES
     ('1er año'),
     ('2do año'),
     ('3er año'),
-    ('4to año'),
+    ('4to año');
 
 -- Nivel educativo: Universidad
 INSERT INTO `cursos` (`descripcion`) VALUES
@@ -179,7 +179,6 @@ INSERT INTO `cursos` (`descripcion`) VALUES
 --
 -- Insert tabla estado empleados
 --
-
 INSERT INTO `estado_empleados` (`id_emp`, `descripcion`, `activo`) VALUES
 (1, 'Activo', 1),
 (2, 'Incapacidad', 1),
@@ -193,80 +192,75 @@ INSERT INTO `estado_empleados` (`id_emp`, `descripcion`, `activo`) VALUES
 --
 -- Insert tabla generos
 --
-
 INSERT INTO `generos` (`id_gen`, `descripcion`, `activo`) VALUES
 (1, 'Masculino', 1),
 (2, 'Femenino', 1),
 (3, 'Indefinido', 1);
 
-
-
 --
--- Insert tabla Idiomas
+-- Insert tabla idiomas
 --
-INSERT INTO `idiomas` (`nombre_idioma`, `descripcion`) VALUES
-    ('Español', 'Idioma hablado en muchos países del mundo, principalmente en América Latina y España.'),
-    ('Inglés', 'Idioma internacional ampliamente utilizado en los negocios, la comunicación y el entretenimiento.'),
-    ('Francés', 'Idioma oficial de varios países y conocido por su influencia en la cultura y la diplomacia.'),
-    ('Alemán', 'Idioma hablado en Alemania y otros países europeos, influyente en la literatura y la ciencia.'),
-    ('Chino Mandarín', 'Idioma más hablado en el mundo, utilizado principalmente en China y otros países asiáticos.'),
-    ('Árabe', 'Idioma oficial en muchos países del Medio Oriente y del norte de África.'),
-    ('Ruso', 'Idioma oficial de Rusia y otros países de la antigua Unión Soviética.'),
-    ('Japonés', 'Idioma hablado en Japón y con una rica cultura y literatura.'),
-    ('Portugués', 'Idioma hablado en Portugal, Brasil y otras naciones lusófonas.'),
-    ('Italiano', 'Idioma hablado en Italia y conocido por su literatura y arte.'),
-    ('Hindi', 'Idioma oficial de la India y hablado por una gran parte de la población.'),
-    ('Coreano', 'Idioma hablado en Corea del Sur y Corea del Norte, con una cultura vibrante.'),
-    ('Turco', 'Idioma hablado en Turquía y en otras comunidades turcas en todo el mundo.'),
-    ('Holandés', 'Idioma hablado en los Países Bajos y Bélgica, también conocido como neerlandés.'),
-    ('Sueco', 'Idioma hablado en Suecia y parte de la cultura nórdica.'),
-    ('Danés', 'Idioma hablado en Dinamarca y las Islas Feroe, parte de la familia germánica.'),
-    ('Polaco', 'Idioma oficial de Polonia y con una rica literatura y tradiciones.'),
-    ('Finlandés', 'Idioma hablado en Finlandia y parte de la cultura finougrí.'),
-    ('Noruego', 'Idioma hablado en Noruega y con diferentes dialectos.'),
-    ('Árabe', 'Idioma hablado en varios países del Medio Oriente y norte de África, con diferentes variedades.'),
-    ('Hebreo', 'Idioma oficial de Israel y con una rica historia religiosa y cultural.'),
-    ('Griego', 'Idioma hablado en Grecia y con una influencia significativa en la filosofía y literatura.'),
-    ('Húngaro', 'Idioma hablado en Hungría y parte de la familia finougrí.'),
-    ('Checo', 'Idioma oficial de la República Checa y parte de la familia eslava.'),
-    ('Ucraniano', 'Idioma oficial de Ucrania y parte de la familia eslava.'),
-    ('Tailandés', 'Idioma oficial de Tailandia y parte de la cultura del sudeste asiático.'),
-    ('Vietnamita', 'Idioma hablado en Vietnam y parte de la familia austroasiática.'),
-    ('Indonesio', 'Idioma oficial de Indonesia, hablado por una gran cantidad de personas.'),
-    ('Malayo', 'Idioma oficial de Malasia y parte de la familia austronesia.'),
-    ('Filipino', 'Idioma oficial de Filipinas, basado en el tagalo y con influencias españolas e inglesas.'),
-    ('Bengalí', 'Idioma oficial de Bangladés y hablado en la región de Bengala.'),
-    ('Rumano', 'Idioma hablado en Rumania y con influencias latinas.'),
-    ('Portugués Brasileño', 'Variante del portugués hablada en Brasil.'),
-    ('Haitiano Criollo', 'Idioma criollo hablado en Haití y otras comunidades haitianas.'),
-    ('Swahili', 'Idioma hablado en varios países africanos y utilizado como lingua franca.'),
-    ('Farsi (Persa)', 'Idioma hablado en Irán y parte de la cultura persa.'),
-    ('Urdu', 'Idioma oficial de Pakistán e India, con influencias persas y árabes.'),
-    ('Malayo', 'Idioma hablado en Malasia e Indonesia, con variantes regionales.'),
-    ('Azerbaiyano', 'Idioma hablado en Azerbaiyán y otras regiones del Cáucaso.'),
-    ('Sindhi', 'Idioma hablado en Pakistán y parte de la cultura sindhi.'),
-    ('Sesotho', 'Idioma oficial de Lesoto y parte de la cultura soto.'),
-    ('Amárico', 'Idioma oficial de Etiopía y parte de la cultura amhara.'),
-    ('Oromo', 'Idioma hablado en Etiopía y otras regiones del Cuerno de África.'),
-    ('Tigriña', 'Idioma hablado en Eritrea y Etiopía, parte de la familia semítica.'),
-    ('Xhosa', 'Idioma hablado en Sudáfrica y parte de la cultura xhosa.'),
-    ('Zulú', 'Idioma hablado en Sudáfrica y parte de la cultura zulú.'),
-    ('Quechua', 'Idioma hablado en varios países de América del Sur, especialmente en los Andes.'),
-    ('Guaraní', 'Idioma hablado en Paraguay y partes de Brasil y Argentina.'),
-    ('Náhuatl', 'Idioma indígena de México, con una rica historia precolombina.'),
-    ('Maya', 'Idioma hablado por las comunidades mayas en México, Guatemala y otros países.'),
-    ('Inuktitut', 'Idioma hablado por los inuit en Canadá y Groenlandia.'),
-    ('Navajo', 'Idioma hablado por la nación navajo en los Estados Unidos.'),
-    ('Maorí', 'Idioma hablado por los maoríes en Nueva Zelanda, parte de la cultura polinesia.'),
-    ('Hawaiano', 'Idioma hablado en Hawái, parte de la cultura hawaiana.'),
-    ('Samoano', 'Idioma hablado en Samoa y partes de Polinesia.');
+INSERT INTO `idiomas` (`descripcion`) VALUES
+    ('Español'),
+    ('Inglés'),
+    ('Francés'),
+    ('Alemán'),
+    ('Chino Mandarín'),
+    ('Árabe'),
+    ('Ruso'),
+    ('Japonés'),
+    ('Portugués'),
+    ('Italiano'),
+    ('Hindi'),
+    ('Coreano'),
+    ('Turco'),
+    ('Holandés'),
+    ('Sueco'),
+    ('Danés'),
+    ('Polaco'),
+    ('Finlandés'),
+    ('Noruego'),
+    ('Árabe'),
+    ('Hebreo'),
+    ('Griego'),
+    ('Húngaro'),
+    ('Checo'),
+    ('Ucraniano'),
+    ('Tailandés'),
+    ('Vietnamita'),
+    ('Indonesio'),
+    ('Malayo'),
+    ('Filipino'),
+    ('Bengalí'),
+    ('Rumano'),
+    ('Portugués Brasileño'),
+    ('Haitiano Criollo'),
+    ('Swahili'),
+    ('Farsi (Persa)'),
+    ('Urdu'),
+    ('Malayo'),
+    ('Azerbaiyano'),
+    ('Sindhi'),
+    ('Sesotho'),
+    ('Amárico'),
+    ('Oromo'),
+    ('Tigriña'),
+    ('Xhosa'),
+    ('Zulú'),
+    ('Quechua'),
+    ('Guaraní'),
+    ('Náhuatl'),
+    ('Maya'),
+    ('Inuktitut'),
+    ('Navajo'),
+    ('Maorí'),
+    ('Hawaiano'),
+    ('Samoano');
 
 --
---Insert tabla libros
+-- Insert tabla libros
 --
-
-INSERT INTO `libros` (`titulo`, `autor`, `descripcion`, `genero`, `fecha_creacion`)
-VALUES
+INSERT INTO `libros` (`titulo`, `autor`, `descripcion`, `genero`, `fecha_creacion`) VALUES
     ('Orgullo y prejuicio', 'Jane Austen', 'Un clásico sobre amor y sociedad en la Inglaterra del siglo XIX.', 'Novela romántica', '1813-01-28'),
     ('Los juegos del hambre', 'Suzanne Collins', 'Una joven lucha por sobrevivir en una competencia mortal.', 'Distopía', '2008-09-14'),
     ('Don Quijote de la Mancha', 'Miguel de Cervantes', 'Las aventuras cómicas de un caballero y su fiel escudero.', 'Novela de caballería', '1605-01-16'),
@@ -291,36 +285,50 @@ VALUES
 --
 -- Insert tabla Marcas
 --
-
 INSERT INTO `marcas` (`descripcion`) 
-VALUES ('Nike');
+	VALUES 
+		('Nike'),
+		('Adidas'),
+		('Apple'),
+		('Samsung'),
+		('Coca-Cola'),
+		('Toyota'),
+		('Microsoft'),
+		('Amazon'),
+		('Google'),
+		('Pepsi');
 
-INSERT INTO `marcas` (`descripcion`) 
-VALUES ('Adidas');
+--
+-- Insert tabla nombres
+--
+INSERT INTO `nombres` (`descripcion`, `fk_id_gen`) 
+	VALUES
+	('Juan', 1),
+	('Pablo', 1),
+	('Miguel', 1),
+	('Alexis', 1),
+	('Alex', 1),
+	('Sebastian', 1),
+	('Alvaro', 1),
+	('Nicolas', 1),
+	('Nicole', 1),
+	('Damian', 1);
 
-INSERT INTO `marcas` (`descripcion`) 
-VALUES ('Apple');
-
-INSERT INTO `marcas` (`descripcion`) 
-VALUES ('Samsung');
-
-INSERT INTO `marcas` (`descripcion`) 
-VALUES ('Coca-Cola');
-
-INSERT INTO `marcas` (`descripcion`) 
-VALUES ('Toyota');
-
-INSERT INTO `marcas` (`descripcion`) 
-VALUES ('Microsoft');
-
-INSERT INTO `marcas` (`descripcion`) 
-VALUES ('Amazon');
-
-INSERT INTO `marcas` (`descripcion`) 
-VALUES ('Google');
-
-INSERT INTO `marcas` (`descripcion`) 
-VALUES ('Pepsi');
+--
+-- Insert tabla nombre empresas
+--
+INSERT INTO `nombre_empresas` (`descripcion`) 
+	VALUES 
+		('Nike'),
+		('Adidas'),
+		('Apple'),
+		('Samsung'),
+		('Coca-Cola'),
+		('Toyota'),
+		('Microsoft'),
+		('Amazon'),
+		('Google'),
+		('Pepsi');
 
 --
 -- Insert tabla paises
@@ -571,43 +579,39 @@ INSERT INTO `paises` (`id_pai`, `created_at`, `updated_at`, `descripcion`, `codi
 (239, '2023-08-21 23:03:37', '2023-08-21 23:03:37', 'Zimbabwe', '', '', 'África', 1);
 
 --
+-- Insert tabla peliculas
+--
+INSERT INTO `peliculas` (`id_pel`, `titulo`, `productor`, `actores`, `descripcion`, `categoria`, `activo`) VALUES
+(1, 'Hasta el límite del honor', 'Mel Gibson', 'Andrew Garfield', 'Inicio de la Gran Guerra Patria. El teniente Adi Sharipov, junto con su pelotón, cubren la retirada del cuartel general del regimiento y permanecen rodeados detrás de las líneas enemigas. El enemigo empuja al escuadrón al pantano. El miedo a lo desconocido, el desaliento y la duda persiguen a los combatientes hasta que se dan cuenta de que la espera y la inacción destruirán al escuadrón más rápido que las balas enemigas.', 'Acción', 1),
+(2, 'Aguila y Jaguar: Los Guerreros Legendarios', 'Mike R. Ortiz', 'Kooltoon Entertainment, Jaime Rionda Marin-Fouche', 'En un futuro postapocalíptico en el que el agua casi ha desaparecido, dos jóvenes sobrevivientes viajan en el tiempo para encontrar el mítico poder del dios prehispánico del agua, y así poder crear el vital recurso. Sin embargo, cuando llegan al presente descubren que el poder está en manos de un empresario sin escrúpulos que sabe todo sobre los mitos prehispánicos y siempre había querido monopolizar el agua. La hermandad Aztaya, un grupo de héroes sucesores de los legendarios guerreros Aztecas y Mayas, comenzará la aventura para evitar que el agua sea controlada y ayudar a los viajeros a cambiar su triste futuro; uniéndose para luchar contra el poderoso enemigo y sus oscuros aliados. Para ganar, los héroes deberán despertar a los más grandes guerreros de la mitología Azteca y Maya: el Águila y el Jaguar.', 'Animación', 1),
+(3, 'Next Exit', 'Indefinido', 'Katie Parker, Rahul Kohli, Rose McIver, Karen Gillan, Tongayi Chirisa y Diva Zappa', 'En un mundo donde los fantasmas son noticias reales y de primera plana, un nuevo y controvertido procedimiento médico permite a las personas suicidarse pacíficamente. En medio de este gran avance, dos extraños viajan juntos a través del país para terminar con sus vidas, solo para encontrar inesperadamente lo que se han estado perdiendo en el camino.', 'Comedia', 1),
+(4, 'Un vampiro en el jardín', 'Netflix y Wit Studio', 'Ryōtarō Makihara', 'En el dividido mundo del futuro, dos chicas sienten atracción por lo prohibido: la humana quiere tocar el violín, y la vampira desea ir más allá de lo conocido.', 'Animación', 1),
+(5, 'Unfinished', 'Ronnie Warner', 'Noree Victoria, Omar Gooding, JadaPaige y Mark Nordike', 'La escritora Zora Matthews es hija del famoso autor Thomas Morgan Matthews, quien murió hace un año. Tanto Zora como Thomas sufren de esquizofrenia. Después de una pelea con su esposo Drew, Zora escapa a la casa escondida de su padre en el hermoso Cañón de Topanga. Allí Zora es presentada al camarero Eddie, su esposa Lorena y el manitas Amadi. Todos hablan crípticamente sobre cómo el padre de Zora cambió su mundo.', 'Thriller', 1),
+(6, 'Harka', 'Lotfy Nathan', 'Adam Bessa, Salima Maatoug, Ikbal Harbi, Najib Allagui', 'Ali, un joven tunecino que sueña con una vida mejor, experimenta una vida solitaria vendiendo gasolina de contrabando en el mercado negro. Cuando su padre muere, tiene que hacerse cargo de sus dos hermanas pequeñas, que se ven abandonadas a su suerte en una casa de la que pronto serán desalojadas. Ante esta repentina responsabilidad y las injusticias a las que se enfrenta, la cólera y la rabia despiertan en Ali. Las de una generación que, más de diez años después de la revolución, sigue intentando hacerse oír...', 'Drama', 1),
+(7, 'La Hija Eterna', 'Joanna Hogg', 'Tilda Swinton, Joseph Mydell, Carly-Sophia Davies, Louis, August Joshi', 'Una mujer y su anciana madre deben enfrentarse a secretos enterrados hace mucho tiempo cuando regresan a su antigua casa familiar, una antigua gran mansión que se ha convertido en un hotel casi vacío lleno de misterio.', 'Misterio', 1),
+(8, 'Foodies', 'Mannin de Wildt', 'Sanne Vogel, Sinan Eroglu, Sanne Langelaar, Holly Brood, Ilse Warringa', 'Sam, una entusiasta bloguera gastronómica, anhela la oportunidad de escribir su propio libro de cocina. Sin embargo, su camino se complica cuando, en respuesta a un desafío, redacta una crítica negativa sobre un restaurante. Esta acción pone en riesgo su carrera y la obliga a enfrentar las consecuencias de sus palabras.', 'Romance', 1),
+(9, 'Remember', 'Atom Egoyan', 'Christopher Plummer (Zev Guttman), Martin Landau (Max Zucker), Bruno Ganz (Rudy Kurlander #1), Jürgen Prochnow', 'La historia de Pil-Joo, un paciente de Alzheimer de unos 80 años, que perdió a toda su familia durante la era colonial japonesa, y dedica su vida a la venganza antes de que sus recuerdos desaparezcan, y un joven de unos 20 años que lo ayuda.', 'Acción', 1),
+(10, 'H4Z4RD', 'Jonas Govaerts', 'Dimitri Thivaios (Noah Hazard), Gene Bervoets, Jeroen Perceval, Frank Lammers, Tom Vermeir', 'El DJ Dimitri Vegas Thivaios asume el papel principal en "H4Z4RD", una comedia de acción desenfrenada que narra la escapada criminal más peculiar que Amberes ha experimentado. La trama se desarrolla completamente desde el interior de un coche y sigue a Noah Hazard, interpretado por Vegas, quien se ve envuelto en un robo por ayudar a su primo recién liberado de prisión. Lo que sigue es una huida vertiginosa a contrarreloj, repleta de secuestros, drogas, peleas y acción, todo ello acompañado de una inmersiva banda sonora y giros de guion que mantienen la trama en constante movimiento.', 'Acción', 1);
+
+--
 -- Insert tabla plantas
 --
-
 INSERT INTO `plantas` (`nombre`, `descripcion`, `tipo`) 
-VALUES ('Rosa', 'Una planta conocida por sus hermosas flores y fragancia.', 'Flor');
-
-INSERT INTO `plantas` (`nombre`, `descripcion`, `tipo`) 
-VALUES ('Pino', 'Un árbol perenne con agujas largas y conos.', 'Árbol');
-
-INSERT INTO `plantas` (`nombre`, `descripcion`, `tipo`) 
-VALUES ('Cactus', 'Una planta suculenta adaptada a climas áridos.', 'Suculenta');
-
-INSERT INTO `plantas` (`nombre`, `descripcion`, `tipo`) 
-VALUES ('Orquídea', 'Una planta exótica apreciada por sus flores elegantes.', 'Flor');
-
-INSERT INTO `plantas` (`nombre`, `descripcion`, `tipo`) 
-VALUES ('Lavanda', 'Un arbusto aromático con flores moradas utilizadas en perfumería.', 'Hierba');
-
-INSERT INTO `plantas` (`nombre`, `descripcion`, `tipo`) 
-VALUES ('Tomate', 'Una planta comestible que produce frutos rojos.', 'Hortaliza');
-
-INSERT INTO `plantas` (`nombre`, `descripcion`, `tipo`) 
-VALUES ('Ficus', 'Un árbol de interior con hojas brillantes y lustrosas.', 'Interior');
-
-INSERT INTO `plantas` (`nombre`, `descripcion`, `tipo`) 
-VALUES ('Menta', 'Una hierba fragante utilizada en infusiones y cocina.', 'Hierba');
-
-INSERT INTO `plantas` (`nombre`, `descripcion`, `tipo`) 
-VALUES ('Girasol', 'Una planta cuyas flores siguen el movimiento del sol.', 'Flor');
-
-INSERT INTO `plantas` (`nombre`, `descripcion`, `tipo`) 
-VALUES ('Cebolla', 'Una planta bulbo utilizada en cocina para dar sabor.', 'Hortaliza');
+	VALUES 
+	('Rosa', 'Una planta conocida por sus hermosas flores y fragancia.', 'Flor'),
+	('Pino', 'Un árbol perenne con agujas largas y conos.', 'Árbol'),
+	('Cactus', 'Una planta suculenta adaptada a climas áridos.', 'Suculenta'),
+	('Orquídea', 'Una planta exótica apreciada por sus flores elegantes.', 'Flor'),
+	('Lavanda', 'Un arbusto aromático con flores moradas utilizadas en perfumería.', 'Hierba'),
+	('Tomate', 'Una planta comestible que produce frutos rojos.', 'Hortaliza'),
+	('Ficus', 'Un árbol de interior con hojas brillantes y lustrosas.', 'Interior'),
+	('Menta', 'Una hierba fragante utilizada en infusiones y cocina.', 'Hierba'),
+	('Girasol', 'Una planta cuyas flores siguen el movimiento del sol.', 'Flor'),
+	('Cebolla', 'Una planta bulbo utilizada en cocina para dar sabor.', 'Hortaliza');
 
 --
 -- Insert tabla profesiones
 --
-
 INSERT INTO `profesiones` (`id_pro`, `descripcion`, `activo`) VALUES
 (1, 'Abogado (a)', 1),
 (2, 'Analista Funcional', 1),
@@ -656,54 +660,27 @@ INSERT INTO `religiones` (`id_rel`, `descripcion`, `activo`) VALUES
 (11, 'Hinduismo', 1);
 
 --
--- Insert tabla religiones
+-- Insert tabla series
 --
-
 INSERT INTO `series` (`titulo`, `productor`, `actores`, `descripcion`, `categoria`, `fecha_publicacion`) 
-VALUES ('Stranger Things', 'Duffer Brothers', 'Millie Bobby Brown, Winona Ryder', 'Un grupo de amigos se enfrenta a eventos paranormales en los años 80.', 'Ciencia ficción', '2016-07-15');
-
-INSERT INTO `series` (`titulo`, `productor`, `actores`, `descripcion`, `categoria`, `fecha_publicacion`) 
-VALUES ('Game of Thrones', 'David Benioff, D. B. Weiss', 'Emilia Clarke, Kit Harington', 'Intrigas y batallas por el Trono de Hierro en un mundo fantástico.', 'Fantasía', '2011-04-17');
-
-INSERT INTO `series` (`titulo`, `productor`, `actores`, `descripcion`, `categoria`, `fecha_publicacion`) 
-VALUES ('Breaking Bad', 'Vince Gilligan', 'Bryan Cranston, Aaron Paul', 'Un profesor de química se convierte en un narcotraficante tras ser diagnosticado con cáncer.', 'Drama', '2008-01-20');
-
-INSERT INTO `series` (`titulo`, `productor`, `actores`, `descripcion`, `categoria`, `fecha_publicacion`) 
-VALUES ('The Crown', 'Peter Morgan', 'Olivia Colman, Tobias Menzies', 'Los eventos históricos que rodean el reinado de la Reina Isabel II.', 'Drama histórico', '2016-11-04');
-
-INSERT INTO `series` (`titulo`, `productor`, `actores`, `descripcion`, `categoria`, `fecha_publicacion`) 
-VALUES ('Friends', 'David Crane, Marta Kauffman', 'Jennifer Aniston, Courteney Cox', 'Un grupo de amigos vive aventuras en Nueva York.', 'Comedia', '1994-09-22');
-
-INSERT INTO `series` (`titulo`, `productor`, `actores`, `descripcion`, `categoria`, `fecha_publicacion`) 
-VALUES ('Black Mirror', 'Charlie Brooker', 'Varios', 'Historias independientes que exploran el lado oscuro de la tecnología y la sociedad.', 'Ciencia ficción', '2011-12-04');
-
-INSERT INTO `series` (`titulo`, `productor`, `actores`, `descripcion`, `categoria`, `fecha_publicacion`) 
-VALUES ('The Mandalorian', 'Jon Favreau', 'Pedro Pascal', 'Las aventuras de un cazarrecompensas en el universo de Star Wars.', 'Ciencia ficción', '2019-11-12');
-
-INSERT INTO `series` (`titulo`, `productor`, `actores`, `descripcion`, `categoria`, `fecha_publicacion`) 
-VALUES ('Sherlock', 'Steven Moffat, Mark Gatiss', 'Benedict Cumberbatch, Martin Freeman', 'Una versión moderna de las historias de Sherlock Holmes.', 'Misterio', '2010-07-25');
-
-INSERT INTO `series` (`titulo`, `productor`, `actores`, `descripcion`, `categoria`, `fecha_publicacion`) 
-VALUES ('Stranger Things', 'Duffer Brothers', 'Millie Bobby Brown, Winona Ryder', 'Un grupo de amigos se enfrenta a eventos paranormales en los años 80.', 'Ciencia ficción', '2016-07-15');
-
-INSERT INTO `series` (`titulo`, `productor`, `actores`, `descripcion`, `categoria`, `fecha_publicacion`) 
-VALUES ('The Office', 'Greg Daniels', 'Steve Carell, Rainn Wilson', 'El día a día de los empleados de una oficina y sus situaciones cómicas.', 'Comedia', '2005-03-24');
-
-
-
+VALUES 
+	('Stranger Things', 'Duffer Brothers', 'Millie Bobby Brown, Winona Ryder', 'Un grupo de amigos se enfrenta a eventos paranormales en los años 80.', 'Ciencia ficción', '2016-07-15'),
+	('Game of Thrones', 'David Benioff, D. B. Weiss', 'Emilia Clarke, Kit Harington', 'Intrigas y batallas por el Trono de Hierro en un mundo fantástico.', 'Fantasía', '2011-04-17'),
+	('Breaking Bad', 'Vince Gilligan', 'Bryan Cranston, Aaron Paul', 'Un profesor de química se convierte en un narcotraficante tras ser diagnosticado con cáncer.', 'Drama', '2008-01-20'),
+	('The Crown', 'Peter Morgan', 'Olivia Colman, Tobias Menzies', 'Los eventos históricos que rodean el reinado de la Reina Isabel II.', 'Drama histórico', '2016-11-04'),
+	('Friends', 'David Crane, Marta Kauffman', 'Jennifer Aniston, Courteney Cox', 'Un grupo de amigos vive aventuras en Nueva York.', 'Comedia', '1994-09-22'),
+	('Black Mirror', 'Charlie Brooker', 'Varios', 'Historias independientes que exploran el lado oscuro de la tecnología y la sociedad.', 'Ciencia ficción', '2011-12-04'),
+	('The Mandalorian', 'Jon Favreau', 'Pedro Pascal', 'Las aventuras de un cazarrecompensas en el universo de Star Wars.', 'Ciencia ficción', '2019-11-12'),
+	('Sherlock', 'Steven Moffat, Mark Gatiss', 'Benedict Cumberbatch, Martin Freeman', 'Una versión moderna de las historias de Sherlock Holmes.', 'Misterio', '2010-07-25'),
+	('Stranger Things', 'Duffer Brothers', 'Millie Bobby Brown, Winona Ryder', 'Un grupo de amigos se enfrenta a eventos paranormales en los años 80.', 'Ciencia ficción', '2016-07-15'),
+	('The Office', 'Greg Daniels', 'Steve Carell, Rainn Wilson', 'El día a día de los empleados de una oficina y sus situaciones cómicas.', 'Comedia', '2005-03-24');
 
 --
--- Insert tabla peliculas
+-- Insert tabla series
 --
-
-INSERT INTO `peliculas` (`id_pel`, `titulo`, `productor`, `actores`, `descripcion`, `categoria`, `activo`) VALUES
-(1, 'Hasta el límite del honor', 'Mel Gibson', 'Andrew Garfield', 'Inicio de la Gran Guerra Patria. El teniente Adi Sharipov, junto con su pelotón, cubren la retirada del cuartel general del regimiento y permanecen rodeados detrás de las líneas enemigas. El enemigo empuja al escuadrón al pantano. El miedo a lo desconocido, el desaliento y la duda persiguen a los combatientes hasta que se dan cuenta de que la espera y la inacción destruirán al escuadrón más rápido que las balas enemigas.', 'Acción', 1),
-(2, 'Aguila y Jaguar: Los Guerreros Legendarios', 'Mike R. Ortiz', 'Kooltoon Entertainment, Jaime Rionda Marin-Fouche', 'En un futuro postapocalíptico en el que el agua casi ha desaparecido, dos jóvenes sobrevivientes viajan en el tiempo para encontrar el mítico poder del dios prehispánico del agua, y así poder crear el vital recurso. Sin embargo, cuando llegan al presente descubren que el poder está en manos de un empresario sin escrúpulos que sabe todo sobre los mitos prehispánicos y siempre había querido monopolizar el agua. La hermandad Aztaya, un grupo de héroes sucesores de los legendarios guerreros Aztecas y Mayas, comenzará la aventura para evitar que el agua sea controlada y ayudar a los viajeros a cambiar su triste futuro; uniéndose para luchar contra el poderoso enemigo y sus oscuros aliados. Para ganar, los héroes deberán despertar a los más grandes guerreros de la mitología Azteca y Maya: el Águila y el Jaguar.', 'Animación', 1),
-(3, 'Next Exit', 'Indefinido', 'Katie Parker, Rahul Kohli, Rose McIver, Karen Gillan, Tongayi Chirisa y Diva Zappa', 'En un mundo donde los fantasmas son noticias reales y de primera plana, un nuevo y controvertido procedimiento médico permite a las personas suicidarse pacíficamente. En medio de este gran avance, dos extraños viajan juntos a través del país para terminar con sus vidas, solo para encontrar inesperadamente lo que se han estado perdiendo en el camino.', 'Comedia', 1),
-(4, 'Un vampiro en el jardín', 'Netflix y Wit Studio', 'Ryōtarō Makihara', 'En el dividido mundo del futuro, dos chicas sienten atracción por lo prohibido: la humana quiere tocar el violín, y la vampira desea ir más allá de lo conocido.', 'Animación', 1),
-(5, 'Unfinished', 'Ronnie Warner', 'Noree Victoria, Omar Gooding, JadaPaige y Mark Nordike', 'La escritora Zora Matthews es hija del famoso autor Thomas Morgan Matthews, quien murió hace un año. Tanto Zora como Thomas sufren de esquizofrenia. Después de una pelea con su esposo Drew, Zora escapa a la casa escondida de su padre en el hermoso Cañón de Topanga. Allí Zora es presentada al camarero Eddie, su esposa Lorena y el manitas Amadi. Todos hablan crípticamente sobre cómo el padre de Zora cambió su mundo.', 'Thriller', 1),
-(6, 'Harka', 'Lotfy Nathan', 'Adam Bessa, Salima Maatoug, Ikbal Harbi, Najib Allagui', 'Ali, un joven tunecino que sueña con una vida mejor, experimenta una vida solitaria vendiendo gasolina de contrabando en el mercado negro. Cuando su padre muere, tiene que hacerse cargo de sus dos hermanas pequeñas, que se ven abandonadas a su suerte en una casa de la que pronto serán desalojadas. Ante esta repentina responsabilidad y las injusticias a las que se enfrenta, la cólera y la rabia despiertan en Ali. Las de una generación que, más de diez años después de la revolución, sigue intentando hacerse oír...', 'Drama', 1),
-(7, 'La Hija Eterna', 'Joanna Hogg', 'Tilda Swinton, Joseph Mydell, Carly-Sophia Davies, Louis, August Joshi', 'Una mujer y su anciana madre deben enfrentarse a secretos enterrados hace mucho tiempo cuando regresan a su antigua casa familiar, una antigua gran mansión que se ha convertido en un hotel casi vacío lleno de misterio.', 'Misterio', 1),
-(8, 'Foodies', 'Mannin de Wildt', 'Sanne Vogel, Sinan Eroglu, Sanne Langelaar, Holly Brood, Ilse Warringa', 'Sam, una entusiasta bloguera gastronómica, anhela la oportunidad de escribir su propio libro de cocina. Sin embargo, su camino se complica cuando, en respuesta a un desafío, redacta una crítica negativa sobre un restaurante. Esta acción pone en riesgo su carrera y la obliga a enfrentar las consecuencias de sus palabras.', 'Romance', 1),
-(9, 'Remember', 'Atom Egoyan', 'Christopher Plummer (Zev Guttman), Martin Landau (Max Zucker), Bruno Ganz (Rudy Kurlander #1), Jürgen Prochnow', 'La historia de Pil-Joo, un paciente de Alzheimer de unos 80 años, que perdió a toda su familia durante la era colonial japonesa, y dedica su vida a la venganza antes de que sus recuerdos desaparezcan, y un joven de unos 20 años que lo ayuda.', 'Acción', 1),
-(10, 'H4Z4RD', 'Jonas Govaerts', 'Dimitri Thivaios (Noah Hazard), Gene Bervoets, Jeroen Perceval, Frank Lammers, Tom Vermeir', 'El DJ Dimitri Vegas Thivaios asume el papel principal en "H4Z4RD", una comedia de acción desenfrenada que narra la escapada criminal más peculiar que Amberes ha experimentado. La trama se desarrolla completamente desde el interior de un coche y sigue a Noah Hazard, interpretado por Vegas, quien se ve envuelto en un robo por ayudar a su primo recién liberado de prisión. Lo que sigue es una huida vertiginosa a contrarreloj, repleta de secuestros, drogas, peleas y acción, todo ello acompañado de una inmersiva banda sonora y giros de guion que mantienen la trama en constante movimiento.', 'Acción', 1);
+INSERT INTO `tipo_usuarios` (`descripcion`) VALUES 
+	('Super Administrador'),
+	('Administrador'),
+	('Cliente'),
+	('QA'),
+	('Moderador');

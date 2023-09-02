@@ -6,7 +6,7 @@ Generador de datos de prueba.
 
 Proyecto web php para generador de datos.
 
-_Sistema web php a desarrollar en su versión 1 y posteriores mejoras_
+_Scripts SQL del sistema a desarrollar en su versión 1 y posteriores mejoras_
 
 ## Colaboración
 * **Contacto, Email** : contacto@multicode.cl

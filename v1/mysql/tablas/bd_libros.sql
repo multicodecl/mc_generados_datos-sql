@@ -6,7 +6,7 @@
 --
 -- Actualizado por: 
 -- 12-08-2023 https://github.com/Hur0nZ
--- 17-08-2023 https://github.com/multicodecl
+-- 01-09-2023 https://github.com/multicodecl
 --
 -- id_lib, Guarda el id del libro
 -- created_at, Guarda la fecha de creación del registro
@@ -27,7 +27,7 @@ CREATE TABLE `libros`
 (
     `id_lib` BIGINT(20) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `updated_at` DATETIME NOT NULL ON UPDATE CURRENT_TIMESTAMP,
+    `updated_at` DATETIME NULL ON UPDATE CURRENT_TIMESTAMP,
 	
     `titulo` VARCHAR(255) NOT NULL,
     `autor` VARCHAR(255) NOT NULL,

@@ -6,7 +6,7 @@
 --
 -- Actualizado por: 
 -- 12-08-2023 https://github.com/adoocs
--- 17-08-2023 https://github.com/multicodecl
+-- 01-09-2023 https://github.com/multicodecl
 --
 -- id_rel, Guarda el id de la profesión
 -- created_at, Guarda la fecha de creación del registro
@@ -23,7 +23,7 @@ CREATE TABLE `profesiones`
 (
     `id_pro` INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `updated_at` DATETIME NOT NULL ON UPDATE CURRENT_TIMESTAMP,
+    `updated_at` DATETIME NULL ON UPDATE CURRENT_TIMESTAMP,
     
 	`descripcion` VARCHAR(255) NOT NULL,
     

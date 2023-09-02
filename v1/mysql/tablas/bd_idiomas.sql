@@ -6,13 +6,13 @@
 --
 -- Actualizado por: 
 -- 12-08-2023 https://github.com/adoocs
--- 17-08-2023 https://github.com/multicodecl
+-- 01-09-2023 https://github.com/multicodecl
 --
 -- id_idi, Guarda el id del idioma
 -- created_at, Guarda la fecha de creación del registro
 -- updated_at, Guarda la fecha de actualización del registro
 --
--- descripcion, Guarda la nombre del idioma
+-- descripcion, Guarda la descripción del idioma
 -- 
 -- activo, Guarda el estado del registro
 --
@@ -23,9 +23,7 @@ CREATE TABLE `idiomas`
 (
     `id_idi` INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
     `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `updated_at` DATETIME NOT NULL ON UPDATE CURRENT_TIMESTAMP,
-	
-    `nombre_idioma` VARCHAR(25) NOT NULL,
+    `updated_at` DATETIME NULL ON UPDATE CURRENT_TIMESTAMP,
 
 	`descripcion` VARCHAR(255) NOT NULL,
 	
