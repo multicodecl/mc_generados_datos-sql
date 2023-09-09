@@ -283,7 +283,7 @@ INSERT INTO `libros` (`titulo`, `autor`, `descripcion`, `genero`, `fecha_creacio
     ('Los hombres son de Marte, las mujeres son de Venus', 'John Gray', 'Un libro de autoayuda sobre las diferencias entre géneros.', 'Autoayuda', '1992-05-01');
 
 --
--- Insert tabla Marcas
+-- Insert tabla marcas
 --
 INSERT INTO `marcas` (`descripcion`) 
 	VALUES 
@@ -676,11 +676,27 @@ VALUES
 	('The Office', 'Greg Daniels', 'Steve Carell, Rainn Wilson', 'El día a día de los empleados de una oficina y sus situaciones cómicas.', 'Comedia', '2005-03-24');
 
 --
--- Insert tabla series
+-- Insert tabla tipo usuarios
 --
+
 INSERT INTO `tipo_usuarios` (`descripcion`) VALUES 
 	('Super Administrador'),
 	('Administrador'),
 	('Cliente'),
 	('QA'),
 	('Moderador');
+
+--
+-- Insert tabla / sistema tipo usuarios
+--
+
+INSERT INTO `sistema_tipo_usuarios` (`descripcion`) VALUES 
+	('Super Administrador'),
+	('Colaborador');
+
+--
+-- Insert tabla / sistema usuarios
+--
+
+INSERT INTO `sistema_usuarios` (`nombre`, `email`, `contrasenia`, `telefono`, `habilitado`, `id_tip_usu`, `activo`) VALUES 
+	('Administrador Multicode', 'test@multicode.cl', '81dc9bdb52d04dc20036dbd8313ed055', '+569 0123 4567', 1, 1, 1);
